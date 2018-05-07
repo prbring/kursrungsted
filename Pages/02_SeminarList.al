@@ -54,7 +54,7 @@ page 123456702 "Seminar List"
         {
             group("&Seminar")
             {
-                /*
+                
                 action("Co&mments")
                 {
                     RunObject=page "Seminar Comment Sheet";
@@ -64,7 +64,7 @@ page 123456702 "Seminar List"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
-                */
+                
             }
         }
     }

@@ -73,7 +73,7 @@ page 123456701 "Seminar Card"
         {
             group("&Seminar")
             {
-                /*
+                
                 action("Co&mments")
                 {
                     RunObject=page "Seminar Comment Sheet";
@@ -83,7 +83,7 @@ page 123456701 "Seminar Card"
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
-                */
+                
             }
         }
     }

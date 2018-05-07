@@ -1,4 +1,4 @@
-table 123456701 "Seminar Setup"
+table 123456700 "Seminar Setup"
 {
     Caption = 'Seminar Setup';
     DataClassification = ToBeClassified;
