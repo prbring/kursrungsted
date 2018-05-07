@@ -1,31 +1,28 @@
-page 123456701 "Seminar Card"
+page 123456702 "Seminar List"
 {
-    Caption = 'Seminar';
+    Caption = 'Seminar List';
     PageType = Card;
     SourceTable = Seminar;
+    Editable = false;
+    CardPageId = 123456701;
+    UsageCategory = Lists;
 
     layout
     {
         area(content)
         {
-            group(General)
+            repeater(Group)
             {
                 field("No."; "No.")
                 {
-                    trigger OnAssistEdit();
-
-                    begin
-                        if AssistEdit then
-                            CurrPage.Update;
-                    end;
                 }
                 field(Name; Name)
                 {
                 }
-                field("Search Name"; "Search Name")
+                field("Seminar Duration"; "Seminar Duration")
                 {
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Price"; "Seminar Price")
                 {
                 }
                 field("Minimum Participants"; "Minimum Participants")
@@ -34,26 +31,9 @@ page 123456701 "Seminar Card"
                 field("Maximum Participants"; "Maximum Participants")
                 {
                 }
-                field(Blocked; Blocked)
-                {
-                }
-                field("Last Date Modified"; "Last Date Modified")
-                {
-                }
-            }
-            group(Invoicing)
-            {
-                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
-                {
-                }
-                field("VAT Prod. Posting Group"; "VAT Prod. Posting Group")
-                {
-                }
-                field("Seminar Price"; "Seminar Price")
-                {
-                }
             }
         }
+
         area(FactBoxes)
         {
             systempart("Links"; Links)
@@ -67,7 +47,8 @@ page 123456701 "Seminar Card"
         }
     }
 
-   actions
+
+    actions
     {
         area(Navigation)
         {
@@ -87,5 +68,4 @@ page 123456701 "Seminar Card"
             }
         }
     }
-
 }
