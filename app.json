@@ -1,0 +1,23 @@
+{
+  "id": "c57025f0-09ab-4641-8922-94e96443b912",
+  "name": "KursRungsted201805",
+  "publisher": "Peder",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
