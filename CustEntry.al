@@ -28,6 +28,7 @@ table 50101 "Cust Entry"
     
     var
         myInt : Integer;
+        asdfasdf: Integer;
 
     trigger OnInsert();
     begin
