@@ -4,7 +4,12 @@ pageextension 123456700 ResourceCardExt extends "Resource Card"
     {
         addlast(General)
         {
-            field("CSD_Resource Type";"CSD_Resource Type")
+            field("CSD_Resource Type"; "CSD_Resource Type")
+            {
+
+            }
+
+            field("CSD_Quantity Per Day"; "CSD_Quantity Per Day")
             {
 
             }
@@ -13,13 +18,10 @@ pageextension 123456700 ResourceCardExt extends "Resource Card"
         {
             group(Room)
             {
+                Caption = 'Room';
                 Visible = ShowMaxField;
-                field("CSD_Maximum Participants";"CSD_Maximum Participants")
-                {
 
-                }
-
-                field("CSD_Quantity Per Day";"CSD_Quantity Per Day")
+                field("CSD_Maximum Participants"; "CSD_Maximum Participants")
                 {
 
                 }
@@ -28,20 +30,16 @@ pageextension 123456700 ResourceCardExt extends "Resource Card"
         }
     }
 
-    actions
-    {
-        // Add changes to page actions here
-    }
-    
+
     var
-       [InDataSet]
-        ShowMaxField : Boolean;
+        [InDataSet]
+        ShowMaxField: Boolean;
 
 
     trigger OnOpenPage();
     begin
-        ShowMaxField := (Type=Type::Machine);
+        ShowMaxField := (Type = Type::Machine);
         CurrPage.Update(false);
-        
+
     end;
 }

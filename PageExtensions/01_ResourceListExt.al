@@ -1,3 +1,4 @@
+
 pageextension 123456701 ResourceListExt extends "Resource List"
 {
     layout
@@ -22,18 +23,18 @@ pageextension 123456701 ResourceListExt extends "Resource List"
     {
         // Add changes to page actions here
     }
-    
+
     trigger OnOpenPage();
     begin
         rec.FilterGroup(3);
-        ShowType := (GetFilter(Type)='');
-        ShowMaxField := (GetFilter(Type)=format(Type::machine));
+        ShowType := (GetFilter(Type) = '');
+        ShowMaxField := (GetFilter(Type) = format(Type::machine));
         rec.FilterGroup(0);
     end;
 
     var
         [InDataSet]
-        ShowType : Boolean;
+        ShowType: Boolean;
         [InDataSet]
-        ShowMaxField : Boolean; 
+        ShowMaxField: Boolean;
 }
